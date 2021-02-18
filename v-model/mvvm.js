@@ -20,12 +20,12 @@ class Dep {
 }
 const dep = new Dep()
 Dep.target = null
-    /**
-     * 1.Wathcer:监听数据驱动视图
-     * 2.constructor(cbk,data,key):参数一-->回调函数里执行了 node.textContent=newVal  参数二-->页面data对象 参数三-->textContent
-     * 3.把Dep.target挂载到Watcher实例上
-     * 4.sendValue():这个方法是调用Wathcer实例上的this.cbk(this.init())
-     */
+/**
+* 1.Wathcer:监听数据驱动视图
+* 2.constructor(cbk,data,key):参数一-->回调函数里执行了 node.textContent=newVal  参数二-->页面data对象 参数三-->textContent
+* 3.把Dep.target挂载到Watcher实例上
+* 4.sendValue():这个方法是调用Wathcer实例上的this.cbk(this.init())
+*/
 
 //  sub7  Watcher class类
 class Watcher {
